@@ -22,7 +22,8 @@ CLASSIC GAME FOR EVERYONE!
 <hr>
 > ## How to play
 
-- Battleship is a two player game, here the computer is the second player. Ships are randomly allocated on the board. When shooting at the other ship coordinates must be entered in a specific format. Letter for column and number for row with space between them. It is a 5 x 5 board, A,B,C,D,E and 1,2,3,4,5.
+- Battleship is a two player game, here the computer is the second player. Ships are randomly allocated on the board. When shooting at the other ship coordinates must be entered in a specific format. Letter for column and number for row with space between them. 
+- It is a 5 x 5 board, A,B,C,D,E and 1,2,3,4,5.
 <h1 align="center">GOOD LUCK!</h1>
 
 
