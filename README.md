@@ -1,3 +1,14 @@
+<h1 align="center">BATTLESHIP GAME</h1>
+
+
+<div align="center">
+  <strong>PLAYER VS COMPUTER</strong>
+</div>
+<div align="center">
+CLASSIC GAME THAT ENTERTAIN EVERYONE
+</div>
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome USER_NAME,
