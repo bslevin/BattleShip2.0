@@ -5,11 +5,21 @@
   <strong>PLAYER VS COMPUTER</strong>
 </div>
 <div align="center">
-CLASSIC GAME THAT ENTERTAIN EVERYONE
+CLASSIC GAME FOR EVERYONE!
 </div>
 
-
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<div align="center">
+  <h3>
+    <a href="">
+      🌍Live Website
+    </a>
+    <span> | </span>
+    <a href="">
+      💾Github Repository
+    </a>
+  </h3>
+</div>
+<hr>
 
 Welcome USER_NAME,
 
