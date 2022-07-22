@@ -136,3 +136,6 @@ def game_loop(player: GameBoard, comp: GameBoard):
         else:
             print(SHOT_STYLE + f"\n{comp.name} shot and missed at {COL_LOOKUP[col]}{row}.")
 
+# Called once one of the player's has zero ships remaining
+def end_game(player: GameBoard, comp: GameBoard):
+
