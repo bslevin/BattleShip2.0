@@ -208,4 +208,7 @@ def prompt_for_coordinates(comp: GameBoard):
             print(ERROR_STYLE + DUPLICATE_CHOICE_ERROR)
             continue
 
-        return col, row   
+        return col, row
+        
+# Called at the end of the game to check if the Player wishes to play another round
+def prompt_for_new_game():   
