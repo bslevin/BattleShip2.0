@@ -169,3 +169,6 @@ def prompt_for_instructions():
             return
         else:
             print(ERROR_STYLE + ERROR_MESSAGE)
+
+# Called to chose random coordinates for the AI
+def chose_random_coordinates(player: GameBoard):
