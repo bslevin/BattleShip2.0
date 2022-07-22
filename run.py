@@ -294,3 +294,6 @@ NAME_PROMPT = "\nWelcome to a new game of Battleship!\n\n" \
               "Please input your name: "
 
 COORDINATE_PROMPT = "\nPlease enter the coordinates for your guess: "
+
+COORDINATE_ERR_MSG = "Invalid Input! Please enter only a letter followed by a number.\n" \
+                     "Example: C4"
