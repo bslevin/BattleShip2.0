@@ -181,3 +181,6 @@ def chose_random_coordinates(player: GameBoard):
         y = randint(0, BOARD_SIZE - 1)
     
     return x, y
+    
+# Called to get coordinates from the Player
+def prompt_for_coordinates(comp: GameBoard):    
