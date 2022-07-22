@@ -1,3 +1,7 @@
+from colorama import init, Fore, Back, Style
+from random import randint
+from re import sub
+
 
 
 
