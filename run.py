@@ -88,3 +88,9 @@ def main():
     player_board = GameBoard(input(PROMPT_STYLE + NAME_PROMPT))
     # Initialize a game board for our AI
     comp_board = GameBoard("HAL")
+
+    while True:
+        player_board.place_ships()
+        comp_board.place_ships()
+
+        game_loop(player_board, comp_board)
