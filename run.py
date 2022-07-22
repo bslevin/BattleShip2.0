@@ -287,3 +287,5 @@ INSTRUCTIONS_TXT = "The goal of Battleship is to destroy all enemy ships before 
                    "The board consists of columns A-H and rows 0-7.\n" \
                    "To guess the location of an enemy ship, type the coordinates for your guess into the terminal.\n" \
                    "The first player to destroy all 4 enemy ships is the winner!"
+                   
+GAME_START_TXT = "___________________________ BEGIN GAME ___________________________"
