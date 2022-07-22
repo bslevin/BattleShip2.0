@@ -65,3 +65,8 @@ class GameBoard:
             self.ships -= 1
             return True
 
+        # Ship missed
+        self.board[row][col] = BOARD_MISS
+        self.public_board[row][col] = BOARD_MISS
+        return False
+
