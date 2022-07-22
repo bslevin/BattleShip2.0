@@ -78,3 +78,9 @@ class GameBoard:
         self.public_board[row][col] = BOARD_MISS
         return False
 
+def main():
+    print(TITLE_STYLE + TITLE_TXT)
+    print(LOGO_STYLE + LOGO_TEXT)
+
+    prompt_for_instructions()
+
