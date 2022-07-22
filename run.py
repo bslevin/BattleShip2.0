@@ -292,3 +292,5 @@ GAME_START_TXT = "___________________________ BEGIN GAME _______________________
 
 NAME_PROMPT = "\nWelcome to a new game of Battleship!\n\n" \
               "Please input your name: "
+
+COORDINATE_PROMPT = "\nPlease enter the coordinates for your guess: "
