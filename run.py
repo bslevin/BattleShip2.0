@@ -138,4 +138,13 @@ def game_loop(player: GameBoard, comp: GameBoard):
 
 # Called once one of the player's has zero ships remaining
 def end_game(player: GameBoard, comp: GameBoard):
+    # Display both player's full game board
+    player.display()
+    comp.display()
 
+    # AI Won
+    if not player.ships:
+        print(ERROR_STYLE + DEFEAT_TEXT)
+    # Player Won
+    else:
+        print(PROMPT_STYLE + VICTORY_TEXT)
