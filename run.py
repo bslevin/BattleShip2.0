@@ -110,3 +110,7 @@ def game_loop(player: GameBoard, comp: GameBoard):
         # Display Player's game board and the AI's public-facing game board
         player.display()
         comp.display(public=True)
+
+        # Shoot at Player's desired coordinates on the AI's game board
+        if comp.shoot_coordinates(*prompt_for_coordinates(comp)):
+            print(SHOT_STYLE + f"\nYour shot was a hit! {comp.name} has {comp.ships} ship(s) remaining.")
