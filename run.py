@@ -154,3 +154,18 @@ def end_game(player: GameBoard, comp: GameBoard):
 
 # Called at the beginning of the game to check if the player needs instructions
 def prompt_for_instructions():
+    while True:
+        # Ensure user inputs only a valid integers
+        try:
+            user_input = int(input(PROMPT_STYLE + INSTRUCTIONS_PROMPT))
+        except ValueError:
+            print(ERROR_STYLE + ERROR_MESSAGE)
+            continue
+
+        if user_input == 1:
+            print(MESSAGE_STYLE + INSTRUCTIONS_TXT)
+        elif user_input == 2:
+            print(MESSAGE_STYLE + GAME_START_TXT)
+            return
+        else:
+            print(ERROR_STYLE + ERROR_MESSAGE)
