@@ -309,3 +309,8 @@ NEW_GAME_ERR_MSG = "Invalid Input! Please enter only Y or N."
 #####################################
 # End of in-game display messages   #
 #####################################
+
+
+# Begin code execution unless this file is being imported
+if __name__ == '__main__':
+    main()
