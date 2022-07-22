@@ -218,4 +218,8 @@ def prompt_for_new_game():
             return True
         if user_input == 'n':
             return False
-        print(ERROR_STYLE + NEW_GAME_ERR_MSG)   
+        print(ERROR_STYLE + NEW_GAME_ERR_MSG)
+        
+
+# Number of rows and columns on the game board
+BOARD_SIZE = 8   
