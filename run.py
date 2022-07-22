@@ -175,3 +175,7 @@ def chose_random_coordinates(player: GameBoard):
     x = randint(0, BOARD_SIZE - 1)
     y = randint(0, BOARD_SIZE - 1)
 
+    # Ensure the returned coordinate hasn't already been guessed
+    while player.check_coord_guessed(x, y):
+        x = randint(0, BOARD_SIZE - 1)
+        y = randint(0, BOARD_SIZE - 1)
