@@ -94,3 +94,13 @@ def main():
         comp_board.place_ships()
 
         game_loop(player_board, comp_board)
+
+        # Break from the main loop if the player doesn't wish to play another game
+        if not prompt_for_new_game():
+            break
+
+        player_board.clear()
+        comp_board.clear()
+
+    print(Style.RESET_ALL + "\nGoodbye!")
+
