@@ -275,3 +275,7 @@ DEFEAT_TEXT = " ____  _____ _____ _____    _  _____ \n" \
               "| | | |  _| | |_  |  _|   / _ \ | |  \n" \
               "| |_| | |___|  _| | |___ / ___ \| |  \n" \
               "|____/|_____|_|   |_____/_/   \_\_|  \n"
+
+INSTRUCTIONS_PROMPT = "\nWelcome to the game of Battleship!\n" \
+                      "To read the instructions, please type 1.\n" \
+                      "Otherwise, please type 2 to begin the game.\n"
