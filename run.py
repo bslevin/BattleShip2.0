@@ -2,8 +2,12 @@ from colorama import init, Fore, Back, Style
 from random import randint
 from re import sub
 
+# Lookup table used to convert from column number to column letter
+COL_LOOKUP = "ABCDEFGH"
 
-
+# Filter ANSI escape sequences out of any text sent to stdout or stderr on Windows and replace with equiv. WIN32 calls
+# Set autoreset to True so that styles are automatically reset after every printed message
+init(autoreset=True)
 
 # Holds the state of a player and their game board
 class GameBoard:
