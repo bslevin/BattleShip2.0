@@ -281,3 +281,9 @@ INSTRUCTIONS_PROMPT = "\nWelcome to the game of Battleship!\n" \
                       "Otherwise, please type 2 to begin the game.\n"
 
 ERROR_MESSAGE = "\nInvalid input, please try again!"
+
+INSTRUCTIONS_TXT = "The goal of Battleship is to destroy all enemy ships before yours are destroyed.\n" \
+                   "At the start of the game, all ships will be placed randomly on the game board.\n" \
+                   "The board consists of columns A-H and rows 0-7.\n" \
+                   "To guess the location of an enemy ship, type the coordinates for your guess into the terminal.\n" \
+                   "The first player to destroy all 4 enemy ships is the winner!"
