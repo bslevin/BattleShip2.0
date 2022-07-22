@@ -55,3 +55,13 @@ class GameBoard:
     # Called to check if a given coordinate has already been guessed on this game board
     def check_coord_guessed(self, col: int, row: int):
         return self.public_board[row][col] in [BOARD_MISS, BOARD_HIT]
+
+    # Called to make a shot on a given coordinate
+    def shoot_coordinates(self, col: int, row: int):
+        # Ship hit
+        if self.board[row][col] == BOARD_SHIP:
+            self.board[row][col] = BOARD_HIT
+            self.public_board[row][col] = BOARD_HIT
+            self.ships -= 1
+            return True
+
