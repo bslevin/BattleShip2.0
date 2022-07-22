@@ -186,4 +186,9 @@ def chose_random_coordinates(player: GameBoard):
 def prompt_for_coordinates(comp: GameBoard):
     while True:
         # Remove any non-word characters from the Player's input
-        user_input = sub(r"\W", '', input(PROMPT_STYLE + COORDINATE_PROMPT))   
+        user_input = sub(r"\W", '', input(PROMPT_STYLE + COORDINATE_PROMPT))
+        
+        # Ensure the given coordinates are valid
+        if len(user_input) != 2 or not user_input[0].isalpha() or not user_input[1].isnumeric():
+            print(ERROR_STYLE + COORDINATE_ERR_MSG)
+            continue   
