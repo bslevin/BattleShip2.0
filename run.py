@@ -279,3 +279,5 @@ DEFEAT_TEXT = " ____  _____ _____ _____    _  _____ \n" \
 INSTRUCTIONS_PROMPT = "\nWelcome to the game of Battleship!\n" \
                       "To read the instructions, please type 1.\n" \
                       "Otherwise, please type 2 to begin the game.\n"
+
+ERROR_MESSAGE = "\nInvalid input, please try again!"
