@@ -241,3 +241,8 @@ ERROR_STYLE = Fore.RED                                  # Used when displaying a
 MESSAGE_STYLE = Back.YELLOW + Fore.BLACK                # Used when displaying out-of-game messages
 NAMEPLATE_STYLE = Fore.CYAN + Style.BRIGHT              # Used when displaying the nameplate above the game board
 SHOT_STYLE = Fore.YELLOW                                # Used when displaying shot messages to the player
+
+
+#####################################
+# In game display and text messages #
+#####################################
