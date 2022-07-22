@@ -42,3 +42,13 @@ class GameBoard:
               f"{board_name:^32}\n"
               f"================================")
 
+    # Print the header row of the game board
+        print(BOARD_SEP.join(" ABCDEFGH"))
+
+        for i in range(BOARD_SIZE):
+            # Print row number and its corresponding row of the game board
+            if public:
+                print(i, *self.public_board[i], sep=BOARD_SEP)
+            else:
+                print(i, *self.board[i], sep=BOARD_SEP)
+
