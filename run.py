@@ -211,4 +211,11 @@ def prompt_for_coordinates(comp: GameBoard):
         return col, row
         
 # Called at the end of the game to check if the Player wishes to play another round
-def prompt_for_new_game():   
+def prompt_for_new_game():
+    while True:
+        user_input = input(PROMPT_STYLE + NEW_GAME_PROMPT).strip().lower()[0]
+        if user_input == 'y':
+            return True
+        if user_input == 'n':
+            return False
+        print(ERROR_STYLE + NEW_GAME_ERR_MSG)   
