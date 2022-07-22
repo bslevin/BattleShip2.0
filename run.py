@@ -34,4 +34,11 @@ class GameBoard:
 
         self.ships = placed_ships
  
-    
+    # Called to display the game board within the terminal
+    def display(self, public: bool = False):
+        board_name = self.name + "'s Board"
+        print(NAMEPLATE_STYLE +
+              f"================================\n"
+              f"{board_name:^32}\n"
+              f"================================")
+
