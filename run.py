@@ -299,3 +299,5 @@ COORDINATE_ERR_MSG = "Invalid Input! Please enter only a letter followed by a nu
                      "Example: C4"
 
 RANGE_ERROR = "Input coordinates are out of range. Please enter only coordinates A-H and 0-7"
+
+DUPLICATE_CHOICE_ERROR = "You have already shot at these coordinates."
