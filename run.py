@@ -197,4 +197,8 @@ def prompt_for_coordinates(comp: GameBoard):
         col = ord(user_input[0].upper()) - 65
         # Convert row number into an integer
         row = int(user_input[1])
-   
+
+        # Ensures Player's input coordinates are within range
+        if col >= BOARD_SIZE or row >= BOARD_SIZE:
+            print(ERROR_STYLE + RANGE_ERROR)
+            continue   
