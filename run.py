@@ -201,4 +201,11 @@ def prompt_for_coordinates(comp: GameBoard):
         # Ensures Player's input coordinates are within range
         if col >= BOARD_SIZE or row >= BOARD_SIZE:
             print(ERROR_STYLE + RANGE_ERROR)
-            continue   
+            continue
+        
+        # Ensures the Player does not double guess a coordinate
+        if comp.check_coord_guessed(col, row):
+            print(ERROR_STYLE + DUPLICATE_CHOICE_ERROR)
+            continue
+
+        return col, row   
