@@ -191,4 +191,10 @@ def prompt_for_coordinates(comp: GameBoard):
         # Ensure the given coordinates are valid
         if len(user_input) != 2 or not user_input[0].isalpha() or not user_input[1].isnumeric():
             print(ERROR_STYLE + COORDINATE_ERR_MSG)
-            continue   
+            continue
+
+        # Convert column letter into column number
+        col = ord(user_input[0].upper()) - 65
+        # Convert row number into an integer
+        row = int(user_input[1])
+   
