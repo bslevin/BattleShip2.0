@@ -107,3 +107,6 @@ def main():
 # Main execution loop of the game. Called once the game boards are setup and ready
 def game_loop(player: GameBoard, comp: GameBoard):
     while True:
+        # Display Player's game board and the AI's public-facing game board
+        player.display()
+        comp.display(public=True)
