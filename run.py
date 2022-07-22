@@ -114,3 +114,8 @@ def game_loop(player: GameBoard, comp: GameBoard):
         # Shoot at Player's desired coordinates on the AI's game board
         if comp.shoot_coordinates(*prompt_for_coordinates(comp)):
             print(SHOT_STYLE + f"\nYour shot was a hit! {comp.name} has {comp.ships} ship(s) remaining.")
+
+            # End the game if player has destroyed the AI's last ship
+            if not comp.ships:
+                return end_game(player, comp)
+
