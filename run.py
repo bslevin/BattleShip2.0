@@ -18,3 +18,10 @@ class GameBoard:
 
         self.clear()
 
+    # Called to reset the game board, placing empty spaces at all coordinates
+    def clear(self):
+        placed_ships = 0
+        while placed_ships < NUMBER_OF_SHIPS:
+            x = randint(0, BOARD_SIZE - 1)
+            y = randint(0, BOARD_SIZE - 1)
+
