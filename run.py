@@ -172,3 +172,6 @@ def prompt_for_instructions():
 
 # Called to chose random coordinates for the AI
 def chose_random_coordinates(player: GameBoard):
+    x = randint(0, BOARD_SIZE - 1)
+    y = randint(0, BOARD_SIZE - 1)
+
