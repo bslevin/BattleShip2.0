@@ -5,7 +5,7 @@ from re import sub
 # Lookup table used to convert from column number to column letter
 COL_LOOKUP = "ABCDEFGH"
 
-# Filter ANSI escape sequences out of any text sent to stdout or stderr on Windows and replace with equiv. WIN32 calls
+# Filter ANSI escape sequences out of any text sent to stdout or stderr on Windows and replace with equiv.
 # Set autoreset to True so that styles are automatically reset after every printed message
 init(autoreset=True)
 
