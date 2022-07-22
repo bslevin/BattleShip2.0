@@ -84,3 +84,5 @@ def main():
 
     prompt_for_instructions()
 
+    # Initialize a game board for the player with their given name
+    player_board = GameBoard(input(PROMPT_STYLE + NAME_PROMPT))
