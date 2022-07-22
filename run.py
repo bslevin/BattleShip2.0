@@ -289,3 +289,6 @@ INSTRUCTIONS_TXT = "The goal of Battleship is to destroy all enemy ships before 
                    "The first player to destroy all 4 enemy ships is the winner!"
                    
 GAME_START_TXT = "___________________________ BEGIN GAME ___________________________"
+
+NAME_PROMPT = "\nWelcome to a new game of Battleship!\n\n" \
+              "Please input your name: "
