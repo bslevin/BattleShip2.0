@@ -123,3 +123,8 @@ def game_loop(player: GameBoard, comp: GameBoard):
                 print(SHOT_STYLE + f"\nYour shot was a miss!")
 
                 col, row = chose_random_coordinates(player)
+
+            # Shoot at randomly chosen coordinates on the Player's game board
+        if player.shoot_coordinates(col, row):
+            print(SHOT_STYLE +
+                  f"\n{comp.name} hit your ship at {COL_LOOKUP[col]}{row}. You have {player.ships} ship(s) remaining.")
