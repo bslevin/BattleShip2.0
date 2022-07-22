@@ -119,3 +119,7 @@ def game_loop(player: GameBoard, comp: GameBoard):
             if not comp.ships:
                 return end_game(player, comp)
 
+            else:
+                print(SHOT_STYLE + f"\nYour shot was a miss!")
+
+                col, row = chose_random_coordinates(player)
