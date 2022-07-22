@@ -25,3 +25,6 @@ class GameBoard:
             x = randint(0, BOARD_SIZE - 1)
             y = randint(0, BOARD_SIZE - 1)
 
+            # Skip to the next iteration if a ship has already been placed here
+            if self.board[x][y] == BOARD_SHIP:
+                continue
