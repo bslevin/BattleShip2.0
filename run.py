@@ -128,3 +128,11 @@ def game_loop(player: GameBoard, comp: GameBoard):
         if player.shoot_coordinates(col, row):
             print(SHOT_STYLE +
                   f"\n{comp.name} hit your ship at {COL_LOOKUP[col]}{row}. You have {player.ships} ship(s) remaining.")
+
+            # End the game if the AI has destroyed the Player's last ship
+            if not player.ships:
+                return end_game(player, comp)
+
+        else:
+            print(SHOT_STYLE + f"\n{comp.name} shot and missed at {COL_LOOKUP[col]}{row}.")
+
