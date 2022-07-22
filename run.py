@@ -52,3 +52,6 @@ class GameBoard:
             else:
                 print(i, *self.board[i], sep=BOARD_SEP)
 
+    # Called to check if a given coordinate has already been guessed on this game board
+    def check_coord_guessed(self, col: int, row: int):
+        return self.public_board[row][col] in [BOARD_MISS, BOARD_HIT]
