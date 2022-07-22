@@ -222,4 +222,6 @@ def prompt_for_new_game():
         
 
 # Number of rows and columns on the game board
-BOARD_SIZE = 8   
+BOARD_SIZE = 8 
+# Number of ships to be placed on the board for each player
+NUMBER_OF_SHIPS = 4 
