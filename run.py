@@ -232,3 +232,12 @@ BOARD_SHIP = 'S'    # Coordinate containing a ship
 BOARD_MISS = 'O'    # Coordinate that has been shot at
 BOARD_HIT = 'X'     # Coordinate containing a destroyed ship
 BOARD_SEP = " | "   # Placed between columns on the board 
+
+# Colorama styles used to display the game
+TITLE_STYLE = Fore.BLACK + Back.RED + Style.BRIGHT      # Used when displaying the Battleship title
+LOGO_STYLE = Fore.BLACK + Back.BLUE + Style.BRIGHT      # Used when displaying the Battleship ASCII art
+PROMPT_STYLE = Fore.GREEN                               # Used when prompting the user for input
+ERROR_STYLE = Fore.RED                                  # Used when displaying an error message
+MESSAGE_STYLE = Back.YELLOW + Fore.BLACK                # Used when displaying out-of-game messages
+NAMEPLATE_STYLE = Fore.CYAN + Style.BRIGHT              # Used when displaying the nameplate above the game board
+SHOT_STYLE = Fore.YELLOW                                # Used when displaying shot messages to the player
