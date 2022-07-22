@@ -224,4 +224,11 @@ def prompt_for_new_game():
 # Number of rows and columns on the game board
 BOARD_SIZE = 8 
 # Number of ships to be placed on the board for each player
-NUMBER_OF_SHIPS = 4 
+NUMBER_OF_SHIPS = 4
+
+# Symbols used to display the board game
+BOARD_WAVE = '~'    # Coordinate containing empty space
+BOARD_SHIP = 'S'    # Coordinate containing a ship
+BOARD_MISS = 'O'    # Coordinate that has been shot at
+BOARD_HIT = 'X'     # Coordinate containing a destroyed ship
+BOARD_SEP = " | "   # Placed between columns on the board 
