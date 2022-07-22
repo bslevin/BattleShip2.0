@@ -183,4 +183,7 @@ def chose_random_coordinates(player: GameBoard):
     return x, y
     
 # Called to get coordinates from the Player
-def prompt_for_coordinates(comp: GameBoard):    
+def prompt_for_coordinates(comp: GameBoard):
+    while True:
+        # Remove any non-word characters from the Player's input
+        user_input = sub(r"\W", '', input(PROMPT_STYLE + COORDINATE_PROMPT))   
