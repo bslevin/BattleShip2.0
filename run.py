@@ -104,3 +104,6 @@ def main():
 
     print(Style.RESET_ALL + "\nGoodbye!")
 
+# Main execution loop of the game. Called once the game boards are setup and ready
+def game_loop(player: GameBoard, comp: GameBoard):
+    while True:
