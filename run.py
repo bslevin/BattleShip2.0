@@ -86,3 +86,5 @@ def main():
 
     # Initialize a game board for the player with their given name
     player_board = GameBoard(input(PROMPT_STYLE + NAME_PROMPT))
+    # Initialize a game board for our AI
+    comp_board = GameBoard("HAL")
